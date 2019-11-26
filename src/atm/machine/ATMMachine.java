@@ -1,21 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package atm.machine;
+import java.util.Scanner;
 
-/**
- *
- * @author mlarrubia
- */
+
+
 public class ATMMachine {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    
+    private static Scanner kb = new Scanner(System.in);
+ 
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        String userName = kb.nextLine();
+        int pin = kb.nextInt();
+        double totalMoney = 0.0;
+        
+        System.out.println("Hello " + userName + " what would like to do today? You currently have $" + totalMoney + " in your account!");
+        System.out.println("COMMANDS:\n deposit: type to deposit a check\nwidthdraw: type to widthdraw money");
+        
     }
+    
+    
+    public static String userCheck(String accountName){
+        
+        
+        
+        return "";
+    }
+    
+    
+    public static double deposit(double preDeposit){
+        double postDeposit;
+        double depositAmount = 0.0;
+        
+        postDeposit = preDeposit + depositAmount;
+        
+        return postDeposit;
+    }
+    
+    
     
 }
